@@ -1,4 +1,6 @@
-if 90 <= average <= 100:
+# Function to determine grade based on average score
+def determine_grade(average):
+    if 90 <= average <= 100:
         return 'A'
     elif 80 <= average < 90:
         return 'B'
@@ -8,6 +10,10 @@ if 90 <= average <= 100:
         return 'D'
     else:
         return 'F'
+
+# Function to calculate average
+def calculate_average(scores):
+    return sum(scores) / len(scores)
 
 # Function to get user input for test scores
 def get_test_scores(num_scores):
